@@ -1,15 +1,17 @@
     const express = require('express')
+    const cors = require('cors');
+    const mongoose = require('mongoose')
+    const shortid = require('shortid');
+
     const app = express()
     const port = 8000
-
-    const shortid = require('shortid');
 
     app.use(express.urlencoded({ extended: true }))
     app.use(express.json())
     app.use(express.static('public'))
     app.use(cors()); 
 
-    const mongoose = require('mongoose')
+    
     mongoose.connect('mongodb+srv://burin:4uGZj0TupkvS9ncf@cluster0.9lxvgcs.mongodb.net/db1', {
         useNewUrlParser: true, useUnifiedTopology: true
     })
