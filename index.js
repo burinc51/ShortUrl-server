@@ -60,8 +60,8 @@
 
     app.get('/api/read', async (req, res) => {
         try {
-            const urls = await Url.find(); 
-            res.json(urls); 
+            const url = await Url.find(); 
+            res.json(url); 
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
