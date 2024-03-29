@@ -24,7 +24,7 @@
         c: Number,
     }, { versionKey: false })
 
-    let Url = mongoose.model('Url', productSchema)
+    let Url = mongoose.model('history', productSchema)
     module.exports = Url
 
     app.post('/api/form', async (req, res) => {
