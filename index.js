@@ -58,7 +58,7 @@
         }
     });
 
-    app.get('/api/url', async (req, res) => {
+    app.get('/api/read', async (req, res) => {
         try {
             const urls = await Url.find(); 
             res.json(urls); 
