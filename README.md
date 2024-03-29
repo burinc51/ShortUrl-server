@@ -20,7 +20,7 @@ https://github.com/burinc51/ShortUrl-server.git
 cd ShortUrl-server
 npm install
 ```
- เปลี่ยน url ที่ติดต่อกับฝั่ง back-end ที่บรรทัด 14 ที่ไฟล์ \src\component\form.js
+ เปลี่ยน url ที่ติดต่อกับฝั่ง back-end ที่บรรทัด 15 ที่ไฟล์ index.js
 ```bash
 mongoose.connect(' url ที่ติดต่อกับ mongodb ', {
         useNewUrlParser: true, useUnifiedTopology: true
