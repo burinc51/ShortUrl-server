@@ -10,7 +10,7 @@
     app.use(express.json())
     app.use(express.static('public'))
     app.use(cors()); 
-    const mgdb = "mongodb+srv://burin:4uGZj0TupkvS9ncf@cluster0.9lxvgcs.mongodb.net/db1";
+    const mgdb = "mongodb+srv://burin:4uGZj0TupkvS9ncf@cluster0.9lxvgcs.mongodb.net/db2";
     
     mongoose.connect(mgdb, {
         useNewUrlParser: true, useUnifiedTopology: true
