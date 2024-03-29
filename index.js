@@ -10,9 +10,9 @@
     app.use(express.json())
     app.use(express.static('public'))
     app.use(cors()); 
-
+    const mgdb = "mongodb+srv://burin:4uGZj0TupkvS9ncf@cluster0.9lxvgcs.mongodb.net/db1";
     
-    mongoose.connect('mongodb+srv://burin:4uGZj0TupkvS9ncf@cluster0.9lxvgcs.mongodb.net/db1', {
+    mongoose.connect(mgdb, {
         useNewUrlParser: true, useUnifiedTopology: true
     })
         .then(result => console.log('Connecttion OK'))
