@@ -23,7 +23,6 @@ npm install
  เปลี่ยน url ที่ติดต่อกับ mongodb ที่บรรทัด 15 ที่ไฟล์ index.js
 ```bash
 const mgdb = " url ที่ติดต่อกับ mongodb";
-    
 ```
 รันเว็บเซิร์ฟเวอร์
 ```bash
